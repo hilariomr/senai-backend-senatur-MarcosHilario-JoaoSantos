@@ -16,6 +16,6 @@ namespace Senai.Senatur.WebApi.CodeFirst.Interfaces
 
         void Deletar(int id);
 
-        void Atualizar(int id, Usuarios usuarios);s
+        void Atualizar(int id, Usuarios usuarios);
     }
 }

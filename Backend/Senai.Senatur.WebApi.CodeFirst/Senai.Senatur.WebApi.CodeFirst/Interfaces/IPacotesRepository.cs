@@ -10,6 +10,8 @@ namespace Senai.Senatur.WebApi.CodeFirst.Interfaces
     {
         List<Pacotes> Listar();
 
+        Pacotes BuscarPorId(int id);
+
         void Cadastrar(Pacotes novoPacote);
 
         void Deletar(int id);

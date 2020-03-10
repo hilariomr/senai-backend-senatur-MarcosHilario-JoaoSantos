@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="NovaPasta\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

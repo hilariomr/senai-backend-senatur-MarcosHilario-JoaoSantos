@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senai.Senatur.WebApi.CodeFirst", "Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst.csproj", "{366A7E5B-B05D-4846-A105-E48F6B5D4E64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senai.Senatur.WebApi.CodeFirst", "Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst.csproj", "{CC677B59-5489-4B37-9C20-26A39087A5A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{366A7E5B-B05D-4846-A105-E48F6B5D4E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{366A7E5B-B05D-4846-A105-E48F6B5D4E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{366A7E5B-B05D-4846-A105-E48F6B5D4E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{366A7E5B-B05D-4846-A105-E48F6B5D4E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC677B59-5489-4B37-9C20-26A39087A5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC677B59-5489-4B37-9C20-26A39087A5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC677B59-5489-4B37-9C20-26A39087A5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC677B59-5489-4B37-9C20-26A39087A5A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {26A35D18-7631-48DC-924B-95734C135C75}
+		SolutionGuid = {2F39340D-C9D2-46EB-9479-264D8FB9E216}
 	EndGlobalSection
 EndGlobal
