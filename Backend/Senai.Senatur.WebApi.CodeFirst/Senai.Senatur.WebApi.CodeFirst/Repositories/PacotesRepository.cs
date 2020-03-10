@@ -13,7 +13,43 @@ namespace Senai.Senatur.WebApi.CodeFirst.Repositories
 
         public void Atualizar(int id, Pacotes pacotes)
         {
-            throw new NotImplementedException();
+            Pacotes pacoteAtualizado = new Pacotes();
+            pacoteAtualizado = BuscarPorId(id);
+
+            pacoteAtualizado.Ativo = true;
+            
+            if (pacotes.DataIda != null)
+            {
+                pacoteAtualizado.DataIda = pacotes.DataIda;
+            }
+
+            if (pacotes.DataVolta != null)
+            {
+                pacoteAtualizado.DataVolta = pacotes.DataVolta;
+            }
+
+            if (pacotes.Descricao != null)
+            {
+                pacoteAtualizado.Descricao = pacotes.Descricao;
+            }
+
+            if (pacotes.NomeCidade != null)
+            {
+                pacoteAtualizado.NomeCidade = pacotes.NomeCidade;
+            }
+
+            if (pacotes.NomePacote != null)
+            {
+                pacoteAtualizado.NomePacote = pacotes.NomePacote;
+            }
+
+            if (pacotes.Valor != null)
+            {
+                pacoteAtualizado.Valor = pacotes.Valor;
+            }
+
+            ctx.Pacotes.Update(pacoteAtualizado);
+            ctx.SaveChanges();
         }
 
         public Pacotes BuscarPorId(int id)
