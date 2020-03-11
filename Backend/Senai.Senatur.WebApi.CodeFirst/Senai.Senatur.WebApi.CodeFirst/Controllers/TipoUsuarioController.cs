@@ -10,7 +10,7 @@ using Senai.Senatur.WebApi.CodeFirst.Repositories;
 
 namespace Senai.Senatur.WebApi.CodeFirst.Controllers
 {
-
+    ///Controller responsável pelos endpoints referentes aos Pacotes
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
@@ -24,6 +24,10 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             _tipoUsuarioRepository = new TipoUsuarioRepository();
         }
 
+        /// <summary>
+        /// Lista todos os Tipos de Usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
 
         public IActionResult Get()
@@ -31,6 +35,11 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return Ok(_tipoUsuarioRepository.Listar());
         }
 
+        /// <summary>
+        /// Busca um Tipo de Usuario pelo ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
 
         public IActionResult GetById(int id)
@@ -38,6 +47,11 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return Ok(_tipoUsuarioRepository.BuscarPorId(id));
         }
 
+        /// <summary>
+        /// Deleta um Tipo de Usuario
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("(id)")]
         public IActionResult Delete(int id)
         {
@@ -45,6 +59,11 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return StatusCode(200);
         }
 
+        /// <summary>
+        /// Cadastra um novo Tipo de Usuario
+        /// </summary>
+        /// <param name="novoTipoUsuario"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post(TipoUsuario novoTipoUsuario)
         {
@@ -52,6 +71,13 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return StatusCode(200);
         }
 
+
+        /// <summary>
+        /// Atualiza um Tipo de Usuario existente
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="tipoUsuario"></param>
+        /// <returns></returns>
         [HttpPut]
         public IActionResult Put(int id, TipoUsuario tipoUsuario)
         {

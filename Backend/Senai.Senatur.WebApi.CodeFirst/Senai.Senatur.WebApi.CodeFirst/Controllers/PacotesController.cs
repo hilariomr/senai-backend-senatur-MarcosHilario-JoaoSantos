@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 
 namespace Senai.Senatur.WebApi.CodeFirst.Controllers
 {
+
+    /// <summary>
+    /// Controller responsável pelos endpoints referentes aos Pacotes
+    /// </summary>
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
 
@@ -21,18 +26,32 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             _pacotesRepository = new PacotesRepository();
         }
 
+        /// <summary>
+        /// Lista todos os Pacotes
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {
             return Ok(_pacotesRepository.Listar());
         }
 
+        /// <summary>
+        /// Busca um Pacote através do seu ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             return Ok(_pacotesRepository.BuscarPorId(id));
         }
 
+        /// <summary>
+        /// Cadastra um novo Pacote
+        /// </summary>
+        /// <param name="novoPacote"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post(Pacotes novoPacote)
         {
@@ -40,6 +59,11 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return StatusCode(200);
         }
 
+        /// <summary>
+        /// Deleta um Pacote
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -47,6 +71,12 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return StatusCode(200);
         }
 
+        /// <summary>
+        /// Atualiza um Pacote existente
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="pacotes"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public IActionResult Atualizar(int id, Pacotes pacotes)
         {

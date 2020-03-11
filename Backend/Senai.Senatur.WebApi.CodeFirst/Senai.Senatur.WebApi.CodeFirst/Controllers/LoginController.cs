@@ -13,6 +13,10 @@ using System.Threading.Tasks;
 
 namespace Senai.Senatur.WebApi.CodeFirst.Controllers
 {
+    /// <summary>
+    /// Controller responsável pelos endpoints referentes ao Login
+    /// </summary>
+
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
@@ -26,6 +30,11 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             _usuariosRepository = new UsuariosRepository();
         }
 
+        /// <summary>
+        /// Realiza o Login do Usuario 
+        /// </summary>
+        /// <param name="login"></param>
+        /// <returns></returns>
         [HttpPost] 
         public IActionResult Post(LoginViewModel login)
         {

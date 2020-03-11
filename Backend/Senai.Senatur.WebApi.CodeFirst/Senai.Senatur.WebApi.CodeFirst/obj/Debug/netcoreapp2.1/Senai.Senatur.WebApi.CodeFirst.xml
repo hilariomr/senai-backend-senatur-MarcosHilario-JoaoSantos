@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi.CodeFirst</name>
+    </assembly>
+    <members>
+        <member name="T:Senai.Senatur.WebApi.CodeFirst.Controllers.LoginController">
+            <summary>
+            Controller responsável pelos endpoints referentes ao Login
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.LoginController.Post(Senai.Senatur.WebApi.CodeFirst.ViewModels.LoginViewModel)">
+            <summary>
+            Realiza o Login do Usuario 
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.CodeFirst.Controllers.PacotesController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos Pacotes
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.PacotesController.Get">
+            <summary>
+            Lista todos os Pacotes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.PacotesController.GetById(System.Int32)">
+            <summary>
+            Busca um Pacote através do seu ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.PacotesController.Post(Senai.Senatur.WebApi.CodeFirst.Domains.Pacotes)">
+            <summary>
+            Cadastra um novo Pacote
+            </summary>
+            <param name="novoPacote"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.PacotesController.Delete(System.Int32)">
+            <summary>
+            Deleta um Pacote
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.PacotesController.Atualizar(System.Int32,Senai.Senatur.WebApi.CodeFirst.Domains.Pacotes)">
+            <summary>
+            Atualiza um Pacote existente
+            </summary>
+            <param name="id"></param>
+            <param name="pacotes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.CodeFirst.Controllers.TipoUsuarioController">
+            Controller responsável pelos endpoints referentes aos Pacotes
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.TipoUsuarioController.Get">
+            <summary>
+            Lista todos os Tipos de Usuario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.TipoUsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um Tipo de Usuario pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.TipoUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um Tipo de Usuario
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.TipoUsuarioController.Post(Senai.Senatur.WebApi.CodeFirst.Domains.TipoUsuario)">
+            <summary>
+            Cadastra um novo Tipo de Usuario
+            </summary>
+            <param name="novoTipoUsuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.TipoUsuarioController.Put(System.Int32,Senai.Senatur.WebApi.CodeFirst.Domains.TipoUsuario)">
+            <summary>
+            Atualiza um Tipo de Usuario existente
+            </summary>
+            <param name="id"></param>
+            <param name="tipoUsuario"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.CodeFirst.Controllers.UsuariosController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos Usuarios
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os Usuários
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um Usuário através do seu ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.UsuariosController.Post(Senai.Senatur.WebApi.CodeFirst.Domains.Usuarios)">
+            <summary>
+            Cadastra um novo Usuário
+            </summary>
+            <param name="novoUsuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um Usuário
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.CodeFirst.Controllers.UsuariosController.Atualizar(System.Int32,Senai.Senatur.WebApi.CodeFirst.Domains.Usuarios)">
+            <summary>
+            Atualizar um Usuário existente
+            </summary>
+            <param name="id"></param>
+            <param name="usuarios"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
