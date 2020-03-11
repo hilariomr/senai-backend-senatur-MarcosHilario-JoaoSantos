@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Senai.Senatur.WebApi.CodeFirst.Domains;
@@ -14,6 +15,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "1")]
     public class TipoUsuarioController : ControllerBase
     {
 
@@ -40,6 +42,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+
         [HttpGet("{id}")]
 
         public IActionResult GetById(int id)

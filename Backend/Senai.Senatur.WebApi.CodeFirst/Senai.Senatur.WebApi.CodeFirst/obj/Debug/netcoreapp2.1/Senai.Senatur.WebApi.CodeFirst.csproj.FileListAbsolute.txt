@@ -28,3 +28,5 @@ C:\Users\mrhil\OneDrive\Área de Trabalho\senai-backend-senatur-MarcosHilario-Jo
 C:\Users\mrhil\OneDrive\Área de Trabalho\senai-backend-senatur-MarcosHilario-JoaoSantos\Backend\Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.CodeFirst.pdb
 C:\Users\mrhil\OneDrive\Área de Trabalho\senai-backend-senatur-MarcosHilario-JoaoSantos\Backend\Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.CodeFirst.xml
 C:\Users\mrhil\OneDrive\Área de Trabalho\senai-backend-senatur-MarcosHilario-JoaoSantos\Backend\Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.CodeFirst.xml
+C:\Users\24055965800\OneDrive\senai-backend-senatur-MarcosHilario-JoaoSantos\Backend\Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.CodeFirst.xml
+C:\Users\24055965800\OneDrive\senai-backend-senatur-MarcosHilario-JoaoSantos\Backend\Senai.Senatur.WebApi.CodeFirst\Senai.Senatur.WebApi.CodeFirst\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.CodeFirst.xml

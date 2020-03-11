@@ -30,6 +30,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// Lista todos os Usuários
         /// </summary>
         /// <returns></returns>
+        [Authorize(Roles = "1")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -41,6 +42,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        [Authorize(Roles = "1")]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -64,6 +66,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        [Authorize(Roles = "1")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -77,6 +80,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// <param name="id"></param>
         /// <param name="usuarios"></param>
         /// <returns></returns>
+        [Authorize(Roles = "1")]
         [HttpPut("{id}")]
         public IActionResult Atualizar(int id, Usuarios usuarios)
         {

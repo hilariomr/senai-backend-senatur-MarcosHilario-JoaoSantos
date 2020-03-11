@@ -66,6 +66,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        [Authorize(Roles = "1")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -79,6 +80,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         /// <param name="id"></param>
         /// <param name="pacotes"></param>
         /// <returns></returns>
+        [Authorize(Roles = "1")]
         [HttpPut("{id}")]
         public IActionResult Atualizar(int id, Pacotes pacotes)
         {

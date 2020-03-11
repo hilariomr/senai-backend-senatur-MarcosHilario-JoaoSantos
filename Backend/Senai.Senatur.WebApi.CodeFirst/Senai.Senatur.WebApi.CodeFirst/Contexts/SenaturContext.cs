@@ -24,7 +24,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Domains
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-6GS7ET34; Initial Catalog=Senatur_Tarde; user Id=sa; pwd=123456;");
+                optionsBuilder.UseSqlServer("Data Source=DEV1201\\SQLEXPRESS; Initial Catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;"); // PC DO MARCÃO = LAPTOP-6GS7ET34
             }
         }
 
