@@ -14,11 +14,46 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
 
     public class UsuariosController : ControllerBase
     {
-        private IUsuarioRepository _usuariosRepository;
+        private IUsuariosRepository _usuariosRepository;
 
         public UsuariosController()
         {
-            // FALTA FAZER AQUI
+            _usuariosRepository = new UsuariosRepository();
         }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_usuariosRepository.Listar());
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            return Ok(_usuariosRepository.BuscarPorId(id));
+        }
+
+        [HttpPost]
+        public IActionResult Post(Usuarios novoUsuario)
+        {
+            _usuariosRepository.Cadastrar(novoUsuario);
+            return StatusCode(200);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            _usuariosRepository.Deletar(id);
+            return StatusCode(200);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, Usuarios usuarios)
+        {
+            _usuariosRepository.Atualizar(id, usuarios);
+            return StatusCode(200);
+        }
+
+
     }
 }
