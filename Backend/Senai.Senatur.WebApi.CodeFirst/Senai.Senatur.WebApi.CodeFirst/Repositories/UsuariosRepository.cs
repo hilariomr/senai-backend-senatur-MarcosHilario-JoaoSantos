@@ -1,4 +1,5 @@
-﻿using Senai.Senatur.WebApi.CodeFirst.Domains;
+﻿using Microsoft.EntityFrameworkCore;
+using Senai.Senatur.WebApi.CodeFirst.Domains;
 using Senai.Senatur.WebApi.CodeFirst.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,12 @@ namespace Senai.Senatur.WebApi.CodeFirst.Repositories
         public void Atualizar(int id, Usuarios usuarios)
         {
             throw new NotImplementedException();
+        }
+
+        public Usuarios BuscarPorEmailSenha(string email, string senha)
+        {
+            Usuarios usuarios = ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+            return usuarios;
         }
 
         public Usuarios BuscarPorId(int id)
@@ -39,5 +46,11 @@ namespace Senai.Senatur.WebApi.CodeFirst.Repositories
         {
             return ctx.Usuarios.ToList();
         }
+
+        public List<Usuarios> ListarComTipoUsuario()
+        {
+            return ctx.Usuarios.Include(e => e.IdTipoUsuarioNavigation).ToList();
+        }
+
     }
 }
