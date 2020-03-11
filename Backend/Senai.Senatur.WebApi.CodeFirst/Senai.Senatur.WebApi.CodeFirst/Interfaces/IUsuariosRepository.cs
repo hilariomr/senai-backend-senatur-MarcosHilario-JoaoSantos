@@ -17,5 +17,9 @@ namespace Senai.Senatur.WebApi.CodeFirst.Interfaces
         void Deletar(int id);
 
         void Atualizar(int id, Usuarios usuarios);
+
+        List<Usuarios> ListarComTipoUsuario();
+
+        Usuarios BuscarPorEmailSenha(string email, string senha);
     }
 }

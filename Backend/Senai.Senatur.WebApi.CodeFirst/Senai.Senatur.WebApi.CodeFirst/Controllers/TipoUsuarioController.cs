@@ -53,9 +53,9 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         }
 
         [HttpPut]
-        public IActionResult Put(TipoUsuario addTipoUsuario)
+        public IActionResult Put(int id, TipoUsuario tipoUsuario)
         {
-            _tipoUsuarioRepository.Atualizar(addTipoUsuario);
+            _tipoUsuarioRepository.Atualizar(id, tipoUsuario);
             return StatusCode(200);
         }
 

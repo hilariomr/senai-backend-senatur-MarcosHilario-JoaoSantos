@@ -12,12 +12,9 @@ namespace Senai.Senatur.WebApi.CodeFirst.Repositories
 
         SenaturContext ctx = new SenaturContext();
 
-
-        
-
-        public void Atualizar(TipoUsuario addtipoUsuario)
+        public void Atualizar(int id, TipoUsuario tipoUsuario)
         {
-            ctx.TipoUsuario.Update(addtipoUsuario);
+            ctx.TipoUsuario.Update(tipoUsuario);
             ctx.SaveChanges();
         }
 

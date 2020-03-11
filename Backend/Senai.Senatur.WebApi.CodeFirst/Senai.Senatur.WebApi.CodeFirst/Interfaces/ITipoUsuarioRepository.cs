@@ -12,8 +12,10 @@ namespace Senai.Senatur.WebApi.CodeFirst.Interfaces
 
         void Cadastrar(TipoUsuario novoTipoUsuario);
 
+        TipoUsuario BuscarPorId(int id);
+
         void Deletar(int id);
 
-        void Atualizar(int id);
+        void Atualizar(int id, TipoUsuario tipoUsuarios);
     }
 }

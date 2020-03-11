@@ -24,7 +24,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_usuariosRepository.Listar());
+            return Ok(_usuariosRepository.ListarComTipoUsuario());
         }
 
         [HttpGet("{id}")]
@@ -53,6 +53,8 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             _usuariosRepository.Atualizar(id, usuarios);
             return StatusCode(200);
         }
+
+
 
 
     }
