@@ -72,9 +72,9 @@ namespace Senai.Senatur.WebApi.CodeFirst
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
-
             app.UseAuthentication();
+
+            app.UseMvc();
         }
     }
 }

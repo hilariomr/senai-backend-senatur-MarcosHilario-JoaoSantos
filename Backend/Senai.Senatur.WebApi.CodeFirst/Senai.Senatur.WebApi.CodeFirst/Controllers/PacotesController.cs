@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Senai.Senatur.WebApi.CodeFirst.Domains;
 using Senai.Senatur.WebApi.CodeFirst.Interfaces;
 using Senai.Senatur.WebApi.CodeFirst.Repositories;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Senai.Senatur.WebApi.CodeFirst.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
 
@@ -33,6 +35,7 @@ namespace Senai.Senatur.WebApi.CodeFirst.Controllers
             return Ok(_pacotesRepository.BuscarPorId(id));
         }
 
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(Pacotes novoPacote)
         {
